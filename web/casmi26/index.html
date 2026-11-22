@@ -37,6 +37,13 @@ input,select,button{font:inherit;color:var(--ink);background:var(--surface);bord
 .sel{outline:2px solid var(--accent)}
 #tip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;box-shadow:0 4px 18px rgba(0,0,0,.12);display:none;max-width:260px;z-index:5}
 .muted{color:var(--muted)}footer{margin-top:40px;color:var(--ink2);font-size:13px}code{font-size:12.5px;word-break:break-all}
+
+:root{--f1:#2a78d6;--f2:#eb6834;--f3:#1baf7a;--f4:#eda100;--f5:#e87ba4;--f6:#008300;--f7:#6250d6;--f8:#e34948;--dn:#f0efec;--dlo:#2a78d6;--dhi:#e34948}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--f1:#3987e5;--f2:#d95926;--f3:#199e70;--f4:#c98500;--f5:#d55181;--f6:#0ca30c;--f7:#9085e9;--f8:#e66767;--dn:#383835;--dlo:#3987e5;--dhi:#e66767}}
+:root[data-theme="dark"]{--f1:#3987e5;--f2:#d95926;--f3:#199e70;--f4:#c98500;--f5:#d55181;--f6:#0ca30c;--f7:#9085e9;--f8:#e66767;--dn:#383835;--dlo:#3987e5;--dhi:#e66767}
+.heat td.h{text-align:center;font-variant-numeric:tabular-nums;color:var(--ink);border:2px solid var(--surface);border-radius:4px}
+.bar{display:flex;height:12px;border-radius:4px;overflow:hidden;min-width:140px}.bar i{display:block;height:100%;border-right:2px solid var(--surface)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}.seg button{border:0;border-radius:0}.seg button.on{background:var(--chip)}
 </style>
 </head>
 <body>
@@ -49,9 +56,15 @@ input,select,button{font:inherit;color:var(--ink);background:var(--surface);bord
 <p class="lead">Each circle is a method component. Size = number of notebooks that use it; colour = median public score claim of those notebooks (MRR@25, at least 5 claims). A line means the two components appear together in more notebooks than chance predicts (lift ≥ 1.25, at least 4 notebooks); thicker = stronger association. Click a component to filter the notebook list.</p>
 <div class="grid2">
  <div class="card"><svg id="net" viewBox="0 0 700 520" width="100%" role="img" aria-label="Co-occurrence network of method components"></svg>
-  <div class="legend"><span>median score claim</span><span class="ramp" id="ramp"></span><span id="rampLab"></span><span><i class="sw" style="background:var(--nodata)"></i>fewer than 5 claims</span></div></div>
+  <div class="ctl"><span class="muted">colour by</span><span class="seg"><button id="byS" class="on">score claim</button><button id="byF">method family</button></span></div><div class="legend" id="leg"><span>median score claim</span><span class="ramp" id="ramp"></span><span id="rampLab"></span><span><i class="sw" style="background:var(--nodata)"></i>fewer than 5 claims</span></div></div>
  <div class="card"><div class="scroll"><table id="ctab"><thead><tr><th data-k="name">component</th><th class="n" data-k="use">notebooks</th><th class="n" data-k="med">median claim</th></tr></thead><tbody></tbody></table></div></div>
 </div>
+
+<h2>Leaderboard groups</h2>
+<p class="lead">Teams grouped by public-leaderboard rank (snapshot <span id="lbsnap"></span>). A notebook belongs to a group when its author is a member of a team in that group. The heatmap shows which share of a group's public notebooks uses at least one component of each method family; colour = ratio to all notebooks (blue = less, red = more, grey = as often). Background and Kaggle tier are aggregate counts of teams (top 2,000 only).</p>
+<div class="card scroll"><table id="gtab"><thead><tr><th>group</th><th class="n">teams</th><th class="n">median score</th><th class="n">median submissions</th><th class="n">public notebooks</th><th>background of teams</th><th>Kaggle competition tier</th></tr></thead><tbody></tbody></table>
+<div class="legend" id="bgleg"></div></div>
+<div class="card scroll" style="margin-top:12px"><table class="heat" id="heat"></table><div class="legend"><span>less often</span><span class="ramp"><i style="background:var(--dlo)"></i><i style="background:var(--dn)"></i><i style="background:var(--dhi)"></i></span><span>more often than all notebooks</span></div></div>
 
 <h2>Notebooks</h2>
 <div class="ctl"><input id="q" placeholder="Search title…" aria-label="Search notebooks"><select id="sort" aria-label="Sort"><option value="v">most votes</option><option value="sc">highest score claim</option><option value="k">most components</option><option value="f">most forks</option></select><span id="filt"></span><span class="muted" id="cnt"></span></div>
@@ -74,11 +87,12 @@ fetch('graph.json').then(r=>r.json()).then(G=>{
 const S=G.summary,NB=G.notebooks,byId=Object.fromEntries(NB.map(n=>[n.id,n]));
 const use=Object.fromEntries(S.top_components),med=Object.fromEntries(S.median_score_claim_milli_by_component);
 const kids={};NB.forEach(n=>{if(n.p)(kids[n.p]=kids[n.p]||[]).push(n.id)});
-$('#tiles').innerHTML=[[S.notebooks.toLocaleString('en'),'public notebooks'],[S.top_components.filter(c=>c[1]>0).length,'method components'],[S.edges.toLocaleString('en'),'graph edges'],[S.records.toLocaleString('en'),'signed records'],[NB.filter(n=>n.p).length,'forks inside the set']].map(([b,s])=>`<div class="tile"><b>${b}</b><span>${s}</span></div>`).join('');
+$('#tiles').innerHTML=[[S.notebooks.toLocaleString('en'),'public notebooks'],[S.top_components.filter(c=>c[1]>0).length,'method components'],[S.edges.toLocaleString('en'),'graph edges'],[S.records.toLocaleString('en'),'signed records'],[Object.keys(S.node_kinds||{}).length,'node kinds'],[NB.filter(n=>n.p).length,'forks inside the set']].map(([b,s])=>`<div class="tile"><b>${b}</b><span>${s}</span></div>`).join('');
 $('#fa').textContent=S.fabric_author;$('#mr').textContent=S.records_merkle_root;$('#snap').textContent=S.snapshot;
 // colour: sequential blue over the median-claim range, 5 steps
 const meds=Object.values(med),lo=Math.min(...meds),hi=Math.max(...meds),steps=['--s0','--s1','--s2','--s3','--s4'];
-const col=c=>med[c]==null?'var(--nodata)':`var(${steps[Math.min(4,Math.floor((med[c]-lo)/((hi-lo)||1)*5))]})`;
+const FAM=S.families||{},famOf={},fams=Object.keys(FAM);fams.forEach((f,i)=>FAM[f].forEach(c=>famOf[c]=i));let mode='s';
+const col=c=>mode==='f'?(famOf[c]!=null?`var(--f${famOf[c]+1})`:'var(--nodata)'):(med[c]==null?'var(--nodata)':`var(${steps[Math.min(4,Math.floor((med[c]-lo)/((hi-lo)||1)*5))]})`);
 $('#ramp').innerHTML=steps.map(s=>`<i style="background:var(${s})"></i>`).join('');$('#rampLab').textContent=`${fmt(lo)} → ${fmt(hi)}`;
 // network: components with use>0, strongest co-occurrence edges
 const comps=S.top_components.filter(c=>c[1]>0).map(c=>c[0]),idx=Object.fromEntries(comps.map((c,i)=>[c,i]));
@@ -118,6 +132,22 @@ function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','
 $('#q').addEventListener('input',renderN);$('#sort').addEventListener('change',renderN);
 $('#ftab tbody').innerHTML=Object.entries(kids).sort((a,b)=>b[1].length-a[1].length).slice(0,15).map(([id,k])=>{const n=byId[id];return `<tr><td><a href="${n.u}" rel="noopener">${esc(n.t||n.s)}</a></td><td class="n">${k.length}</td><td class="n">${fmt(n.sc)}</td></tr>`}).join('');
 renderC();renderN();
+function legendS(){$('#leg').innerHTML=`<span>median score claim</span><span class="ramp">${steps.map(s=>`<i style="background:var(${s})"></i>`).join('')}</span><span>${fmt(lo)} → ${fmt(hi)}</span><span><i class="sw" style="background:var(--nodata)"></i>fewer than 5 claims</span>`}
+function legendF(){$('#leg').innerHTML=fams.map((f,i)=>`<span><i class="sw" style="background:var(--f${i+1})"></i>${f}</span>`).join('')}
+function recolour(){svg.querySelectorAll('g[data-c] circle:nth-child(2)').forEach(ci=>ci.setAttribute('fill',col(ci.parentNode.dataset.c)));renderC();mode==='f'?legendF():legendS()}
+$('#byS').onclick=()=>{mode='s';$('#byS').classList.add('on');$('#byF').classList.remove('on');recolour()};
+$('#byF').onclick=()=>{mode='f';$('#byF').classList.add('on');$('#byS').classList.remove('on');recolour()};
+const GR=S.groups||[];if(GR.length){
+ const bgK=['Kaggle competition professional','experienced data scientist / programmer','chemistry/bio competition experience','new account','little public signal'],tK=['Grandmaster','Master','Expert','Contributor','Novice'];
+ const bar=(o,keys,tot)=>tot?`<div class="bar" title="${keys.filter(k=>o[k]).map(k=>k+': '+o[k]).join(' · ')}">${keys.map((k,i)=>o[k]?`<i style="width:${100*o[k]/tot}%;background:var(--f${i+1})"></i>`:'').join('')}</div>`:'<span class="muted">–</span>';
+ $('#gtab tbody').innerHTML=GR.map(g=>`<tr><td><b>${g.gid}</b> ${g.name}</td><td class="n">${g.teams.toLocaleString('en')}</td><td class="n">${fmt(g.median_score_milli)}</td><td class="n">${g.median_submissions}</td><td class="n">${g.notebooks}</td><td>${bar(g.background,bgK,g.teams_with_background)}</td><td>${bar(g.tiers,tK,g.teams_with_background)}</td></tr>`).join('');
+ $('#bgleg').innerHTML='<span class="muted">background:</span>'+bgK.map((k,i)=>`<span><i class="sw" style="background:var(--f${i+1})"></i>${k}</span>`).join('')+'<span class="muted">· tier:</span>'+tK.map((k,i)=>`<span><i class="sw" style="background:var(--f${i+1})"></i>${k}</span>`).join('');
+ const famShare=nbs=>fams.map(f=>nbs.length?nbs.filter(n=>n.c.some(c=>FAM[f].includes(c))).length/nbs.length:0),all=famShare(NB);
+ const rows=GR.filter(g=>g.notebooks>0).map(g=>({g,sh:famShare(NB.filter(n=>n.g===g.gid))}));
+ const cell=(x,a)=>{if(!a)return '<td class="h">–</td>';const r=Math.log(x/a)/Math.log(2),t=Math.max(-1,Math.min(1,r));const c=t<0?`color-mix(in oklab,var(--dlo) ${Math.round(-t*100)}%,var(--dn))`:`color-mix(in oklab,var(--dhi) ${Math.round(t*100)}%,var(--dn))`;return `<td class="h" style="background:${c}" title="${(100*x).toFixed(0)}% vs ${(100*a).toFixed(0)}% of all notebooks">${(100*x).toFixed(0)}%</td>`};
+ $('#heat').innerHTML=`<thead><tr><th>group</th>${fams.map(f=>`<th style="white-space:normal;min-width:84px">${f}</th>`).join('')}</tr></thead><tbody>`+rows.map(({g,sh})=>`<tr><td><b>${g.gid}</b> ${g.name} <span class="muted">(${g.notebooks})</span></td>${sh.map((x,i)=>cell(x,all[i])).join('')}</tr>`).join('')+`<tr><td class="muted">all notebooks</td>${all.map(a=>`<td class="h">${(100*a).toFixed(0)}%</td>`).join('')}</tr></tbody>`;
+ $('#lbsnap').textContent=(S.groups_snapshot||'22 Nov 2026');
+}
 }).catch(e=>{$('#tiles').innerHTML=`<p>Could not load graph.json (${e}).</p>`});
 </script>
 </body>
