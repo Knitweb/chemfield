@@ -1,0 +1,3811 @@
+{
+ "name": "casmi26-public-method-kg",
+ "snapshot": "2026-11-22",
+ "notebooks": 2046,
+ "records": 2261,
+ "edges": 47717,
+ "fabric_author": "pls1ad4s4mkw63nvis3evsyranwgjq7m75mfhq",
+ "fabric_pub": "020b7efad0636b9643f46b5c42e2e29fd2f7b9f4a667e4416a0730caf70eab80dc",
+ "top_components": [
+  [
+   "adduct handling",
+   1529
+  ],
+  [
+   "ensemble/blend",
+   1453
+  ],
+  [
+   "BRICS / generation",
+   1433
+  ],
+  [
+   "collision energy",
+   1403
+  ],
+  [
+   "fragment rescoring",
+   1401
+  ],
+  [
+   "analog/network propagation",
+   1339
+  ],
+  [
+   "fingerprint net",
+   1321
+  ],
+  [
+   "tautomer canonical key",
+   1319
+  ],
+  [
+   "PubChem",
+   1309
+  ],
+  [
+   "COCONUT",
+   1288
+  ],
+  [
+   "MetFrag",
+   1260
+  ],
+  [
+   "RRF",
+   1239
+  ],
+  [
+   "ICEBERG",
+   1160
+  ],
+  [
+   "documentation prior",
+   1157
+  ],
+  [
+   "GLACIER",
+   1142
+  ],
+  [
+   "DreaMS",
+   1061
+  ],
+  [
+   "lib_max gate",
+   1006
+  ],
+  [
+   "cosine similarity",
+   968
+  ],
+  [
+   "LightGBM",
+   937
+  ],
+  [
+   "Morgan/ECFP",
+   783
+  ],
+  [
+   "LOTUS",
+   739
+  ],
+  [
+   "external library",
+   738
+  ],
+  [
+   "NPAtlas",
+   729
+  ],
+  [
+   "entropy similarity",
+   645
+  ],
+  [
+   "rank-1 lock",
+   496
+  ],
+  [
+   "NP prior",
+   446
+  ],
+  [
+   "FIORA",
+   405
+  ],
+  [
+   "transformer",
+   177
+  ],
+  [
+   "LambdaRank",
+   112
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   72
+  ],
+  [
+   "modified cosine",
+   67
+  ],
+  [
+   "MassSpecGym",
+   54
+  ],
+  [
+   "MIST",
+   45
+  ],
+  [
+   "MAGMa",
+   35
+  ],
+  [
+   "CFM-ID",
+   32
+  ],
+  [
+   "UNIQ",
+   25
+  ],
+  [
+   "XGBoost",
+   24
+  ],
+  [
+   "faiss/kNN",
+   7
+  ],
+  [
+   "CatBoost",
+   6
+  ],
+  [
+   "JESTR",
+   5
+  ],
+  [
+   "GNN",
+   5
+  ],
+  [
+   "APRIOR",
+   4
+  ],
+  [
+   "MS2DeepScore",
+   2
+  ]
+ ],
+ "median_score_claim_milli_by_component": [
+  [
+   "external library",
+   487
+  ],
+  [
+   "FIORA",
+   487
+  ],
+  [
+   "NP prior",
+   487
+  ],
+  [
+   "rank-1 lock",
+   487
+  ],
+  [
+   "LOTUS",
+   484
+  ],
+  [
+   "NPAtlas",
+   484
+  ],
+  [
+   "DreaMS",
+   480
+  ],
+  [
+   "lib_max gate",
+   479
+  ],
+  [
+   "BRICS / generation",
+   477
+  ],
+  [
+   "tautomer canonical key",
+   477
+  ],
+  [
+   "GLACIER",
+   477
+  ],
+  [
+   "ICEBERG",
+   477
+  ],
+  [
+   "documentation prior",
+   477
+  ],
+  [
+   "MetFrag",
+   468
+  ],
+  [
+   "analog/network propagation",
+   468
+  ],
+  [
+   "fragment rescoring",
+   468
+  ],
+  [
+   "RRF",
+   468
+  ],
+  [
+   "COCONUT",
+   467
+  ],
+  [
+   "PubChem",
+   467
+  ],
+  [
+   "adduct handling",
+   467
+  ],
+  [
+   "collision energy",
+   467
+  ],
+  [
+   "ensemble/blend",
+   467
+  ],
+  [
+   "fingerprint net",
+   467
+  ],
+  [
+   "transformer",
+   466
+  ],
+  [
+   "LightGBM",
+   452
+  ],
+  [
+   "cosine similarity",
+   446
+  ],
+  [
+   "Morgan/ECFP",
+   440
+  ],
+  [
+   "entropy similarity",
+   438
+  ]
+ ],
+ "cooccurrence": [
+  [
+   "adduct handling",
+   "ensemble/blend",
+   1415
+  ],
+  [
+   "adduct handling",
+   "collision energy",
+   1403
+  ],
+  [
+   "BRICS / generation",
+   "adduct handling",
+   1392
+  ],
+  [
+   "adduct handling",
+   "fragment rescoring",
+   1385
+  ],
+  [
+   "collision energy",
+   "ensemble/blend",
+   1365
+  ],
+  [
+   "BRICS / generation",
+   "fragment rescoring",
+   1361
+  ],
+  [
+   "BRICS / generation",
+   "ensemble/blend",
+   1344
+  ],
+  [
+   "ensemble/blend",
+   "fragment rescoring",
+   1337
+  ],
+  [
+   "collision energy",
+   "fragment rescoring",
+   1321
+  ],
+  [
+   "BRICS / generation",
+   "collision energy",
+   1320
+  ],
+  [
+   "adduct handling",
+   "analog/network propagation",
+   1318
+  ],
+  [
+   "analog/network propagation",
+   "ensemble/blend",
+   1314
+  ],
+  [
+   "BRICS / generation",
+   "analog/network propagation",
+   1306
+  ],
+  [
+   "adduct handling",
+   "fingerprint net",
+   1306
+  ],
+  [
+   "analog/network propagation",
+   "fragment rescoring",
+   1304
+  ],
+  [
+   "ensemble/blend",
+   "fingerprint net",
+   1300
+  ],
+  [
+   "collision energy",
+   "fingerprint net",
+   1294
+  ],
+  [
+   "BRICS / generation",
+   "fingerprint net",
+   1286
+  ],
+  [
+   "adduct handling",
+   "tautomer canonical key",
+   1284
+  ],
+  [
+   "PubChem",
+   "adduct handling",
+   1282
+  ],
+  [
+   "analog/network propagation",
+   "collision energy",
+   1280
+  ],
+  [
+   "fingerprint net",
+   "fragment rescoring",
+   1276
+  ],
+  [
+   "BRICS / generation",
+   "tautomer canonical key",
+   1271
+  ],
+  [
+   "PubChem",
+   "ensemble/blend",
+   1270
+  ],
+  [
+   "analog/network propagation",
+   "fingerprint net",
+   1267
+  ],
+  [
+   "PubChem",
+   "collision energy",
+   1260
+  ],
+  [
+   "MetFrag",
+   "adduct handling",
+   1259
+  ],
+  [
+   "fragment rescoring",
+   "tautomer canonical key",
+   1258
+  ],
+  [
+   "ensemble/blend",
+   "tautomer canonical key",
+   1257
+  ],
+  [
+   "BRICS / generation",
+   "MetFrag",
+   1256
+  ],
+  [
+   "MetFrag",
+   "fragment rescoring",
+   1256
+  ],
+  [
+   "MetFrag",
+   "ensemble/blend",
+   1254
+  ],
+  [
+   "MetFrag",
+   "analog/network propagation",
+   1253
+  ],
+  [
+   "COCONUT",
+   "adduct handling",
+   1252
+  ],
+  [
+   "collision energy",
+   "tautomer canonical key",
+   1249
+  ],
+  [
+   "analog/network propagation",
+   "tautomer canonical key",
+   1240
+  ],
+  [
+   "COCONUT",
+   "ensemble/blend",
+   1237
+  ],
+  [
+   "MetFrag",
+   "collision energy",
+   1235
+  ],
+  [
+   "BRICS / generation",
+   "COCONUT",
+   1233
+  ],
+  [
+   "BRICS / generation",
+   "PubChem",
+   1227
+  ],
+  [
+   "MetFrag",
+   "fingerprint net",
+   1226
+  ],
+  [
+   "PubChem",
+   "fragment rescoring",
+   1224
+  ],
+  [
+   "COCONUT",
+   "fragment rescoring",
+   1219
+  ],
+  [
+   "RRF",
+   "adduct handling",
+   1217
+  ],
+  [
+   "PubChem",
+   "analog/network propagation",
+   1214
+  ],
+  [
+   "COCONUT",
+   "analog/network propagation",
+   1213
+  ],
+  [
+   "fingerprint net",
+   "tautomer canonical key",
+   1210
+  ],
+  [
+   "PubChem",
+   "fingerprint net",
+   1209
+  ],
+  [
+   "RRF",
+   "ensemble/blend",
+   1207
+  ],
+  [
+   "COCONUT",
+   "tautomer canonical key",
+   1205
+  ],
+  [
+   "COCONUT",
+   "collision energy",
+   1205
+  ],
+  [
+   "RRF",
+   "collision energy",
+   1202
+  ],
+  [
+   "BRICS / generation",
+   "RRF",
+   1195
+  ],
+  [
+   "MetFrag",
+   "tautomer canonical key",
+   1188
+  ],
+  [
+   "RRF",
+   "fragment rescoring",
+   1188
+  ],
+  [
+   "PubChem",
+   "tautomer canonical key",
+   1187
+  ],
+  [
+   "PubChem",
+   "RRF",
+   1186
+  ],
+  [
+   "COCONUT",
+   "fingerprint net",
+   1181
+  ],
+  [
+   "RRF",
+   "fingerprint net",
+   1174
+  ],
+  [
+   "RRF",
+   "analog/network propagation",
+   1173
+  ],
+  [
+   "MetFrag",
+   "PubChem",
+   1164
+  ],
+  [
+   "ICEBERG",
+   "adduct handling",
+   1157
+  ],
+  [
+   "COCONUT",
+   "MetFrag",
+   1155
+  ],
+  [
+   "PubChem",
+   "documentation prior",
+   1154
+  ],
+  [
+   "BRICS / generation",
+   "ICEBERG",
+   1153
+  ],
+  [
+   "ICEBERG",
+   "fragment rescoring",
+   1153
+  ],
+  [
+   "ICEBERG",
+   "ensemble/blend",
+   1152
+  ],
+  [
+   "adduct handling",
+   "documentation prior",
+   1149
+  ],
+  [
+   "ICEBERG",
+   "collision energy",
+   1148
+  ],
+  [
+   "documentation prior",
+   "fragment rescoring",
+   1146
+  ],
+  [
+   "ICEBERG",
+   "PubChem",
+   1146
+  ],
+  [
+   "ICEBERG",
+   "analog/network propagation",
+   1145
+  ],
+  [
+   "RRF",
+   "tautomer canonical key",
+   1145
+  ],
+  [
+   "COCONUT",
+   "PubChem",
+   1144
+  ],
+  [
+   "MetFrag",
+   "RRF",
+   1143
+  ],
+  [
+   "collision energy",
+   "documentation prior",
+   1143
+  ],
+  [
+   "documentation prior",
+   "ensemble/blend",
+   1143
+  ],
+  [
+   "ICEBERG",
+   "RRF",
+   1143
+  ],
+  [
+   "GLACIER",
+   "adduct handling",
+   1139
+  ],
+  [
+   "BRICS / generation",
+   "documentation prior",
+   1138
+  ],
+  [
+   "BRICS / generation",
+   "GLACIER",
+   1137
+  ],
+  [
+   "GLACIER",
+   "ensemble/blend",
+   1137
+  ],
+  [
+   "GLACIER",
+   "ICEBERG",
+   1135
+  ],
+  [
+   "GLACIER",
+   "fragment rescoring",
+   1135
+  ],
+  [
+   "analog/network propagation",
+   "documentation prior",
+   1135
+  ],
+  [
+   "documentation prior",
+   "fingerprint net",
+   1135
+  ],
+  [
+   "GLACIER",
+   "PubChem",
+   1134
+  ],
+  [
+   "ICEBERG",
+   "fingerprint net",
+   1134
+  ],
+  [
+   "GLACIER",
+   "RRF",
+   1132
+  ],
+  [
+   "GLACIER",
+   "collision energy",
+   1131
+  ],
+  [
+   "GLACIER",
+   "analog/network propagation",
+   1129
+  ],
+  [
+   "ICEBERG",
+   "documentation prior",
+   1125
+  ],
+  [
+   "RRF",
+   "documentation prior",
+   1125
+  ],
+  [
+   "GLACIER",
+   "fingerprint net",
+   1122
+  ],
+  [
+   "MetFrag",
+   "documentation prior",
+   1120
+  ],
+  [
+   "GLACIER",
+   "documentation prior",
+   1117
+  ],
+  [
+   "ICEBERG",
+   "MetFrag",
+   1117
+  ],
+  [
+   "GLACIER",
+   "MetFrag",
+   1114
+  ],
+  [
+   "ICEBERG",
+   "tautomer canonical key",
+   1106
+  ],
+  [
+   "documentation prior",
+   "tautomer canonical key",
+   1103
+  ],
+  [
+   "GLACIER",
+   "tautomer canonical key",
+   1091
+  ],
+  [
+   "COCONUT",
+   "RRF",
+   1080
+  ],
+  [
+   "DreaMS",
+   "adduct handling",
+   1053
+  ],
+  [
+   "BRICS / generation",
+   "DreaMS",
+   1050
+  ],
+  [
+   "DreaMS",
+   "fragment rescoring",
+   1048
+  ],
+  [
+   "COCONUT",
+   "ICEBERG",
+   1047
+  ],
+  [
+   "COCONUT",
+   "documentation prior",
+   1046
+  ],
+  [
+   "DreaMS",
+   "ensemble/blend",
+   1044
+  ],
+  [
+   "DreaMS",
+   "collision energy",
+   1043
+  ],
+  [
+   "DreaMS",
+   "analog/network propagation",
+   1040
+  ],
+  [
+   "DreaMS",
+   "fingerprint net",
+   1040
+  ],
+  [
+   "DreaMS",
+   "MetFrag",
+   1036
+  ],
+  [
+   "COCONUT",
+   "GLACIER",
+   1033
+  ],
+  [
+   "DreaMS",
+   "PubChem",
+   1025
+  ],
+  [
+   "DreaMS",
+   "tautomer canonical key",
+   1007
+  ],
+  [
+   "DreaMS",
+   "RRF",
+   1007
+  ],
+  [
+   "DreaMS",
+   "documentation prior",
+   1005
+  ],
+  [
+   "adduct handling",
+   "lib_max gate",
+   1005
+  ],
+  [
+   "ensemble/blend",
+   "lib_max gate",
+   1004
+  ],
+  [
+   "BRICS / generation",
+   "lib_max gate",
+   1002
+  ],
+  [
+   "collision energy",
+   "lib_max gate",
+   1002
+  ],
+  [
+   "fragment rescoring",
+   "lib_max gate",
+   1002
+  ],
+  [
+   "PubChem",
+   "lib_max gate",
+   1001
+  ],
+  [
+   "DreaMS",
+   "ICEBERG",
+   1000
+  ],
+  [
+   "RRF",
+   "lib_max gate",
+   999
+  ],
+  [
+   "DreaMS",
+   "GLACIER",
+   997
+  ],
+  [
+   "analog/network propagation",
+   "lib_max gate",
+   997
+  ],
+  [
+   "fingerprint net",
+   "lib_max gate",
+   996
+  ],
+  [
+   "lib_max gate",
+   "tautomer canonical key",
+   996
+  ],
+  [
+   "ICEBERG",
+   "lib_max gate",
+   991
+  ],
+  [
+   "COCONUT",
+   "lib_max gate",
+   989
+  ],
+  [
+   "GLACIER",
+   "lib_max gate",
+   981
+  ],
+  [
+   "documentation prior",
+   "lib_max gate",
+   979
+  ],
+  [
+   "MetFrag",
+   "lib_max gate",
+   977
+  ],
+  [
+   "adduct handling",
+   "cosine similarity",
+   954
+  ],
+  [
+   "COCONUT",
+   "DreaMS",
+   950
+  ],
+  [
+   "LightGBM",
+   "ensemble/blend",
+   925
+  ],
+  [
+   "LightGBM",
+   "adduct handling",
+   924
+  ],
+  [
+   "LightGBM",
+   "collision energy",
+   917
+  ],
+  [
+   "COCONUT",
+   "LightGBM",
+   915
+  ],
+  [
+   "BRICS / generation",
+   "cosine similarity",
+   910
+  ],
+  [
+   "LightGBM",
+   "analog/network propagation",
+   910
+  ],
+  [
+   "LightGBM",
+   "fingerprint net",
+   910
+  ],
+  [
+   "BRICS / generation",
+   "LightGBM",
+   910
+  ],
+  [
+   "cosine similarity",
+   "fragment rescoring",
+   909
+  ],
+  [
+   "LightGBM",
+   "fragment rescoring",
+   909
+  ],
+  [
+   "LightGBM",
+   "tautomer canonical key",
+   903
+  ],
+  [
+   "LightGBM",
+   "PubChem",
+   902
+  ],
+  [
+   "cosine similarity",
+   "ensemble/blend",
+   895
+  ],
+  [
+   "LightGBM",
+   "RRF",
+   882
+  ],
+  [
+   "COCONUT",
+   "cosine similarity",
+   881
+  ],
+  [
+   "collision energy",
+   "cosine similarity",
+   876
+  ],
+  [
+   "LightGBM",
+   "MetFrag",
+   874
+  ],
+  [
+   "cosine similarity",
+   "tautomer canonical key",
+   873
+  ],
+  [
+   "ICEBERG",
+   "LightGBM",
+   869
+  ],
+  [
+   "analog/network propagation",
+   "cosine similarity",
+   868
+  ],
+  [
+   "LightGBM",
+   "documentation prior",
+   865
+  ],
+  [
+   "DreaMS",
+   "lib_max gate",
+   859
+  ],
+  [
+   "GLACIER",
+   "LightGBM",
+   857
+  ],
+  [
+   "cosine similarity",
+   "fingerprint net",
+   843
+  ],
+  [
+   "MetFrag",
+   "cosine similarity",
+   841
+  ],
+  [
+   "PubChem",
+   "cosine similarity",
+   820
+  ],
+  [
+   "LightGBM",
+   "lib_max gate",
+   815
+  ],
+  [
+   "RRF",
+   "cosine similarity",
+   776
+  ],
+  [
+   "Morgan/ECFP",
+   "adduct handling",
+   774
+  ],
+  [
+   "BRICS / generation",
+   "Morgan/ECFP",
+   767
+  ],
+  [
+   "Morgan/ECFP",
+   "ensemble/blend",
+   758
+  ],
+  [
+   "DreaMS",
+   "LightGBM",
+   756
+  ],
+  [
+   "cosine similarity",
+   "documentation prior",
+   754
+  ],
+  [
+   "Morgan/ECFP",
+   "fragment rescoring",
+   750
+  ],
+  [
+   "ICEBERG",
+   "cosine similarity",
+   745
+  ],
+  [
+   "COCONUT",
+   "Morgan/ECFP",
+   743
+  ],
+  [
+   "GLACIER",
+   "cosine similarity",
+   740
+  ],
+  [
+   "cosine similarity",
+   "lib_max gate",
+   740
+  ],
+  [
+   "Morgan/ECFP",
+   "collision energy",
+   739
+  ],
+  [
+   "LightGBM",
+   "cosine similarity",
+   737
+  ],
+  [
+   "LOTUS",
+   "adduct handling",
+   736
+  ],
+  [
+   "LOTUS",
+   "analog/network propagation",
+   734
+  ],
+  [
+   "LOTUS",
+   "collision energy",
+   734
+  ],
+  [
+   "LOTUS",
+   "fragment rescoring",
+   734
+  ],
+  [
+   "Morgan/ECFP",
+   "analog/network propagation",
+   733
+  ],
+  [
+   "LOTUS",
+   "PubChem",
+   733
+  ],
+  [
+   "LOTUS",
+   "ensemble/blend",
+   733
+  ],
+  [
+   "BRICS / generation",
+   "LOTUS",
+   732
+  ],
+  [
+   "LOTUS",
+   "MetFrag",
+   731
+  ],
+  [
+   "LOTUS",
+   "RRF",
+   731
+  ],
+  [
+   "adduct handling",
+   "external library",
+   731
+  ],
+  [
+   "collision energy",
+   "external library",
+   731
+  ],
+  [
+   "ensemble/blend",
+   "external library",
+   731
+  ],
+  [
+   "external library",
+   "fragment rescoring",
+   731
+  ],
+  [
+   "RRF",
+   "external library",
+   730
+  ],
+  [
+   "NPAtlas",
+   "adduct handling",
+   729
+  ],
+  [
+   "analog/network propagation",
+   "external library",
+   729
+  ],
+  [
+   "BRICS / generation",
+   "external library",
+   728
+  ],
+  [
+   "ICEBERG",
+   "LOTUS",
+   728
+  ],
+  [
+   "MetFrag",
+   "external library",
+   728
+  ],
+  [
+   "NPAtlas",
+   "PubChem",
+   728
+  ],
+  [
+   "PubChem",
+   "external library",
+   728
+  ],
+  [
+   "Morgan/ECFP",
+   "fingerprint net",
+   727
+  ],
+  [
+   "GLACIER",
+   "LOTUS",
+   727
+  ],
+  [
+   "LOTUS",
+   "documentation prior",
+   727
+  ],
+  [
+   "NPAtlas",
+   "collision energy",
+   727
+  ],
+  [
+   "BRICS / generation",
+   "NPAtlas",
+   726
+  ],
+  [
+   "LOTUS",
+   "fingerprint net",
+   726
+  ],
+  [
+   "NPAtlas",
+   "analog/network propagation",
+   726
+  ],
+  [
+   "NPAtlas",
+   "ensemble/blend",
+   726
+  ],
+  [
+   "NPAtlas",
+   "fingerprint net",
+   726
+  ],
+  [
+   "MetFrag",
+   "NPAtlas",
+   725
+  ],
+  [
+   "NPAtlas",
+   "fragment rescoring",
+   725
+  ],
+  [
+   "documentation prior",
+   "external library",
+   725
+  ],
+  [
+   "NPAtlas",
+   "RRF",
+   724
+  ],
+  [
+   "ICEBERG",
+   "NPAtlas",
+   723
+  ],
+  [
+   "ICEBERG",
+   "external library",
+   723
+  ],
+  [
+   "NPAtlas",
+   "documentation prior",
+   723
+  ],
+  [
+   "GLACIER",
+   "NPAtlas",
+   722
+  ],
+  [
+   "GLACIER",
+   "external library",
+   721
+  ],
+  [
+   "LOTUS",
+   "NPAtlas",
+   720
+  ],
+  [
+   "external library",
+   "fingerprint net",
+   717
+  ],
+  [
+   "Morgan/ECFP",
+   "tautomer canonical key",
+   712
+  ],
+  [
+   "DreaMS",
+   "NPAtlas",
+   708
+  ],
+  [
+   "LOTUS",
+   "external library",
+   706
+  ],
+  [
+   "DreaMS",
+   "LOTUS",
+   704
+  ],
+  [
+   "DreaMS",
+   "external library",
+   704
+  ],
+  [
+   "LOTUS",
+   "tautomer canonical key",
+   697
+  ],
+  [
+   "NPAtlas",
+   "external library",
+   694
+  ],
+  [
+   "MetFrag",
+   "Morgan/ECFP",
+   691
+  ],
+  [
+   "external library",
+   "tautomer canonical key",
+   690
+  ],
+  [
+   "NPAtlas",
+   "tautomer canonical key",
+   689
+  ],
+  [
+   "DreaMS",
+   "cosine similarity",
+   683
+  ],
+  [
+   "Morgan/ECFP",
+   "cosine similarity",
+   671
+  ],
+  [
+   "Morgan/ECFP",
+   "PubChem",
+   657
+  ],
+  [
+   "adduct handling",
+   "entropy similarity",
+   645
+  ],
+  [
+   "COCONUT",
+   "LOTUS",
+   640
+  ],
+  [
+   "COCONUT",
+   "NPAtlas",
+   637
+  ],
+  [
+   "BRICS / generation",
+   "entropy similarity",
+   632
+  ],
+  [
+   "entropy similarity",
+   "fragment rescoring",
+   630
+  ],
+  [
+   "analog/network propagation",
+   "entropy similarity",
+   629
+  ],
+  [
+   "COCONUT",
+   "external library",
+   629
+  ],
+  [
+   "ensemble/blend",
+   "entropy similarity",
+   626
+  ],
+  [
+   "COCONUT",
+   "entropy similarity",
+   625
+  ],
+  [
+   "Morgan/ECFP",
+   "RRF",
+   622
+  ],
+  [
+   "collision energy",
+   "entropy similarity",
+   614
+  ],
+  [
+   "Morgan/ECFP",
+   "entropy similarity",
+   613
+  ],
+  [
+   "LightGBM",
+   "Morgan/ECFP",
+   609
+  ],
+  [
+   "MetFrag",
+   "entropy similarity",
+   607
+  ],
+  [
+   "entropy similarity",
+   "fingerprint net",
+   607
+  ],
+  [
+   "entropy similarity",
+   "tautomer canonical key",
+   603
+  ],
+  [
+   "ICEBERG",
+   "Morgan/ECFP",
+   592
+  ],
+  [
+   "LOTUS",
+   "lib_max gate",
+   591
+  ],
+  [
+   "Morgan/ECFP",
+   "documentation prior",
+   590
+  ],
+  [
+   "cosine similarity",
+   "entropy similarity",
+   588
+  ],
+  [
+   "NPAtlas",
+   "lib_max gate",
+   585
+  ],
+  [
+   "Morgan/ECFP",
+   "lib_max gate",
+   583
+  ],
+  [
+   "external library",
+   "lib_max gate",
+   579
+  ],
+  [
+   "GLACIER",
+   "Morgan/ECFP",
+   578
+  ],
+  [
+   "PubChem",
+   "entropy similarity",
+   532
+  ],
+  [
+   "LightGBM",
+   "entropy similarity",
+   507
+  ],
+  [
+   "RRF",
+   "entropy similarity",
+   506
+  ],
+  [
+   "DreaMS",
+   "Morgan/ECFP",
+   503
+  ],
+  [
+   "adduct handling",
+   "rank-1 lock",
+   496
+  ],
+  [
+   "BRICS / generation",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "GLACIER",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "ICEBERG",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "MetFrag",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "PubChem",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "RRF",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "analog/network propagation",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "collision energy",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "documentation prior",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "ensemble/blend",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "fragment rescoring",
+   "rank-1 lock",
+   495
+  ],
+  [
+   "fingerprint net",
+   "rank-1 lock",
+   493
+  ],
+  [
+   "rank-1 lock",
+   "tautomer canonical key",
+   491
+  ],
+  [
+   "COCONUT",
+   "rank-1 lock",
+   490
+  ],
+  [
+   "lib_max gate",
+   "rank-1 lock",
+   488
+  ],
+  [
+   "DreaMS",
+   "rank-1 lock",
+   482
+  ],
+  [
+   "documentation prior",
+   "entropy similarity",
+   481
+  ],
+  [
+   "ICEBERG",
+   "entropy similarity",
+   479
+  ],
+  [
+   "entropy similarity",
+   "lib_max gate",
+   478
+  ],
+  [
+   "GLACIER",
+   "entropy similarity",
+   475
+  ],
+  [
+   "external library",
+   "rank-1 lock",
+   470
+  ],
+  [
+   "LOTUS",
+   "LightGBM",
+   470
+  ],
+  [
+   "LightGBM",
+   "NPAtlas",
+   468
+  ],
+  [
+   "LOTUS",
+   "rank-1 lock",
+   463
+  ],
+  [
+   "LightGBM",
+   "external library",
+   459
+  ],
+  [
+   "NPAtlas",
+   "rank-1 lock",
+   458
+  ],
+  [
+   "NP prior",
+   "ensemble/blend",
+   446
+  ],
+  [
+   "BRICS / generation",
+   "NP prior",
+   445
+  ],
+  [
+   "NP prior",
+   "adduct handling",
+   445
+  ],
+  [
+   "MetFrag",
+   "NP prior",
+   444
+  ],
+  [
+   "NP prior",
+   "fragment rescoring",
+   444
+  ],
+  [
+   "COCONUT",
+   "NP prior",
+   443
+  ],
+  [
+   "NP prior",
+   "analog/network propagation",
+   441
+  ],
+  [
+   "NP prior",
+   "tautomer canonical key",
+   441
+  ],
+  [
+   "NP prior",
+   "PubChem",
+   440
+  ],
+  [
+   "NP prior",
+   "RRF",
+   439
+  ],
+  [
+   "NP prior",
+   "collision energy",
+   439
+  ],
+  [
+   "GLACIER",
+   "NP prior",
+   438
+  ],
+  [
+   "ICEBERG",
+   "NP prior",
+   438
+  ],
+  [
+   "LOTUS",
+   "NP prior",
+   438
+  ],
+  [
+   "NP prior",
+   "documentation prior",
+   438
+  ],
+  [
+   "NP prior",
+   "fingerprint net",
+   438
+  ],
+  [
+   "NP prior",
+   "lib_max gate",
+   438
+  ],
+  [
+   "NP prior",
+   "external library",
+   436
+  ],
+  [
+   "NP prior",
+   "NPAtlas",
+   433
+  ],
+  [
+   "NP prior",
+   "rank-1 lock",
+   433
+  ],
+  [
+   "DreaMS",
+   "NP prior",
+   431
+  ],
+  [
+   "DreaMS",
+   "entropy similarity",
+   416
+  ],
+  [
+   "BRICS / generation",
+   "FIORA",
+   405
+  ],
+  [
+   "FIORA",
+   "RRF",
+   405
+  ],
+  [
+   "FIORA",
+   "adduct handling",
+   405
+  ],
+  [
+   "FIORA",
+   "collision energy",
+   405
+  ],
+  [
+   "FIORA",
+   "GLACIER",
+   404
+  ],
+  [
+   "FIORA",
+   "ICEBERG",
+   404
+  ],
+  [
+   "FIORA",
+   "MetFrag",
+   404
+  ],
+  [
+   "FIORA",
+   "PubChem",
+   404
+  ],
+  [
+   "FIORA",
+   "analog/network propagation",
+   404
+  ],
+  [
+   "FIORA",
+   "ensemble/blend",
+   404
+  ],
+  [
+   "FIORA",
+   "fingerprint net",
+   404
+  ],
+  [
+   "FIORA",
+   "fragment rescoring",
+   404
+  ],
+  [
+   "FIORA",
+   "tautomer canonical key",
+   403
+  ],
+  [
+   "FIORA",
+   "documentation prior",
+   402
+  ],
+  [
+   "COCONUT",
+   "FIORA",
+   400
+  ],
+  [
+   "DreaMS",
+   "FIORA",
+   397
+  ],
+  [
+   "FIORA",
+   "LOTUS",
+   391
+  ],
+  [
+   "FIORA",
+   "external library",
+   389
+  ],
+  [
+   "FIORA",
+   "lib_max gate",
+   389
+  ],
+  [
+   "FIORA",
+   "NPAtlas",
+   388
+  ],
+  [
+   "FIORA",
+   "rank-1 lock",
+   375
+  ],
+  [
+   "FIORA",
+   "NP prior",
+   372
+  ],
+  [
+   "LOTUS",
+   "cosine similarity",
+   370
+  ],
+  [
+   "NPAtlas",
+   "cosine similarity",
+   368
+  ],
+  [
+   "cosine similarity",
+   "external library",
+   361
+  ],
+  [
+   "LightGBM",
+   "rank-1 lock",
+   334
+  ],
+  [
+   "FIORA",
+   "LightGBM",
+   319
+  ],
+  [
+   "LightGBM",
+   "NP prior",
+   295
+  ],
+  [
+   "cosine similarity",
+   "rank-1 lock",
+   269
+  ],
+  [
+   "FIORA",
+   "cosine similarity",
+   242
+  ],
+  [
+   "NP prior",
+   "cosine similarity",
+   240
+  ],
+  [
+   "Morgan/ECFP",
+   "NPAtlas",
+   190
+  ],
+  [
+   "LOTUS",
+   "Morgan/ECFP",
+   188
+  ],
+  [
+   "Morgan/ECFP",
+   "external library",
+   179
+  ],
+  [
+   "adduct handling",
+   "transformer",
+   174
+  ],
+  [
+   "BRICS / generation",
+   "transformer",
+   168
+  ],
+  [
+   "fragment rescoring",
+   "transformer",
+   165
+  ],
+  [
+   "ensemble/blend",
+   "transformer",
+   164
+  ],
+  [
+   "analog/network propagation",
+   "transformer",
+   161
+  ],
+  [
+   "collision energy",
+   "transformer",
+   161
+  ],
+  [
+   "fingerprint net",
+   "transformer",
+   152
+  ],
+  [
+   "COCONUT",
+   "transformer",
+   150
+  ],
+  [
+   "tautomer canonical key",
+   "transformer",
+   150
+  ],
+  [
+   "MetFrag",
+   "transformer",
+   147
+  ],
+  [
+   "cosine similarity",
+   "transformer",
+   127
+  ],
+  [
+   "Morgan/ECFP",
+   "transformer",
+   126
+  ],
+  [
+   "entropy similarity",
+   "transformer",
+   117
+  ],
+  [
+   "LambdaRank",
+   "LightGBM",
+   110
+  ],
+  [
+   "LambdaRank",
+   "adduct handling",
+   110
+  ],
+  [
+   "LambdaRank",
+   "ensemble/blend",
+   110
+  ],
+  [
+   "LambdaRank",
+   "fragment rescoring",
+   110
+  ],
+  [
+   "Morgan/ECFP",
+   "rank-1 lock",
+   110
+  ],
+  [
+   "LambdaRank",
+   "analog/network propagation",
+   109
+  ],
+  [
+   "BRICS / generation",
+   "LambdaRank",
+   108
+  ],
+  [
+   "LambdaRank",
+   "PubChem",
+   108
+  ],
+  [
+   "LambdaRank",
+   "fingerprint net",
+   108
+  ],
+  [
+   "LambdaRank",
+   "tautomer canonical key",
+   108
+  ],
+  [
+   "LambdaRank",
+   "collision energy",
+   107
+  ],
+  [
+   "NPAtlas",
+   "entropy similarity",
+   106
+  ],
+  [
+   "PubChem",
+   "transformer",
+   105
+  ],
+  [
+   "LOTUS",
+   "entropy similarity",
+   104
+  ],
+  [
+   "LambdaRank",
+   "RRF",
+   104
+  ],
+  [
+   "COCONUT",
+   "LambdaRank",
+   103
+  ],
+  [
+   "LambdaRank",
+   "MetFrag",
+   103
+  ],
+  [
+   "LambdaRank",
+   "documentation prior",
+   102
+  ],
+  [
+   "DreaMS",
+   "LambdaRank",
+   98
+  ],
+  [
+   "ICEBERG",
+   "LambdaRank",
+   97
+  ],
+  [
+   "GLACIER",
+   "LambdaRank",
+   95
+  ],
+  [
+   "LambdaRank",
+   "lib_max gate",
+   95
+  ],
+  [
+   "RRF",
+   "transformer",
+   92
+  ],
+  [
+   "DreaMS",
+   "transformer",
+   92
+  ],
+  [
+   "entropy similarity",
+   "external library",
+   87
+  ],
+  [
+   "FIORA",
+   "Morgan/ECFP",
+   83
+  ],
+  [
+   "LambdaRank",
+   "external library",
+   82
+  ],
+  [
+   "LightGBM",
+   "transformer",
+   76
+  ],
+  [
+   "LOTUS",
+   "LambdaRank",
+   76
+  ],
+  [
+   "documentation prior",
+   "transformer",
+   75
+  ],
+  [
+   "Morgan/ECFP",
+   "NP prior",
+   73
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "adduct handling",
+   72
+  ],
+  [
+   "LambdaRank",
+   "NPAtlas",
+   72
+  ],
+  [
+   "BRICS / generation",
+   "SIRIUS/CSI:FingerID",
+   71
+  ],
+  [
+   "ICEBERG",
+   "transformer",
+   71
+  ],
+  [
+   "FIORA",
+   "LambdaRank",
+   69
+  ],
+  [
+   "COCONUT",
+   "SIRIUS/CSI:FingerID",
+   68
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "cosine similarity",
+   68
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "fragment rescoring",
+   68
+  ],
+  [
+   "GLACIER",
+   "transformer",
+   68
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "tautomer canonical key",
+   67
+  ],
+  [
+   "adduct handling",
+   "modified cosine",
+   67
+  ],
+  [
+   "cosine similarity",
+   "modified cosine",
+   67
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "analog/network propagation",
+   66
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "ensemble/blend",
+   66
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "collision energy",
+   66
+  ],
+  [
+   "Morgan/ECFP",
+   "SIRIUS/CSI:FingerID",
+   65
+  ],
+  [
+   "LambdaRank",
+   "rank-1 lock",
+   65
+  ],
+  [
+   "PubChem",
+   "SIRIUS/CSI:FingerID",
+   63
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "entropy similarity",
+   63
+  ],
+  [
+   "LambdaRank",
+   "NP prior",
+   62
+  ],
+  [
+   "BRICS / generation",
+   "modified cosine",
+   61
+  ],
+  [
+   "modified cosine",
+   "tautomer canonical key",
+   60
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "fingerprint net",
+   60
+  ],
+  [
+   "MetFrag",
+   "SIRIUS/CSI:FingerID",
+   59
+  ],
+  [
+   "collision energy",
+   "modified cosine",
+   58
+  ],
+  [
+   "lib_max gate",
+   "transformer",
+   58
+  ],
+  [
+   "fragment rescoring",
+   "modified cosine",
+   57
+  ],
+  [
+   "PubChem",
+   "modified cosine",
+   55
+  ],
+  [
+   "ensemble/blend",
+   "modified cosine",
+   54
+  ],
+  [
+   "analog/network propagation",
+   "modified cosine",
+   54
+  ],
+  [
+   "external library",
+   "transformer",
+   54
+  ],
+  [
+   "MassSpecGym",
+   "adduct handling",
+   53
+  ],
+  [
+   "MassSpecGym",
+   "ensemble/blend",
+   53
+  ],
+  [
+   "MassSpecGym",
+   "fragment rescoring",
+   53
+  ],
+  [
+   "COCONUT",
+   "modified cosine",
+   52
+  ],
+  [
+   "DreaMS",
+   "SIRIUS/CSI:FingerID",
+   51
+  ],
+  [
+   "BRICS / generation",
+   "MassSpecGym",
+   51
+  ],
+  [
+   "MassSpecGym",
+   "collision energy",
+   51
+  ],
+  [
+   "MassSpecGym",
+   "fingerprint net",
+   51
+  ],
+  [
+   "fingerprint net",
+   "modified cosine",
+   51
+  ],
+  [
+   "RRF",
+   "modified cosine",
+   50
+  ],
+  [
+   "COCONUT",
+   "MassSpecGym",
+   50
+  ],
+  [
+   "Morgan/ECFP",
+   "modified cosine",
+   50
+  ],
+  [
+   "MassSpecGym",
+   "Morgan/ECFP",
+   49
+  ],
+  [
+   "MassSpecGym",
+   "tautomer canonical key",
+   49
+  ],
+  [
+   "MetFrag",
+   "modified cosine",
+   49
+  ],
+  [
+   "LightGBM",
+   "modified cosine",
+   49
+  ],
+  [
+   "LambdaRank",
+   "cosine similarity",
+   48
+  ],
+  [
+   "DreaMS",
+   "modified cosine",
+   48
+  ],
+  [
+   "LOTUS",
+   "modified cosine",
+   48
+  ],
+  [
+   "LightGBM",
+   "MassSpecGym",
+   48
+  ],
+  [
+   "MassSpecGym",
+   "MetFrag",
+   47
+  ],
+  [
+   "MassSpecGym",
+   "analog/network propagation",
+   47
+  ],
+  [
+   "ICEBERG",
+   "modified cosine",
+   46
+  ],
+  [
+   "MassSpecGym",
+   "PubChem",
+   46
+  ],
+  [
+   "NPAtlas",
+   "modified cosine",
+   46
+  ],
+  [
+   "documentation prior",
+   "modified cosine",
+   46
+  ],
+  [
+   "GLACIER",
+   "SIRIUS/CSI:FingerID",
+   45
+  ],
+  [
+   "ICEBERG",
+   "SIRIUS/CSI:FingerID",
+   45
+  ],
+  [
+   "LightGBM",
+   "SIRIUS/CSI:FingerID",
+   45
+  ],
+  [
+   "MassSpecGym",
+   "entropy similarity",
+   45
+  ],
+  [
+   "RRF",
+   "SIRIUS/CSI:FingerID",
+   45
+  ],
+  [
+   "GLACIER",
+   "modified cosine",
+   45
+  ],
+  [
+   "lib_max gate",
+   "modified cosine",
+   45
+  ],
+  [
+   "LOTUS",
+   "SIRIUS/CSI:FingerID",
+   44
+  ],
+  [
+   "NPAtlas",
+   "transformer",
+   44
+  ],
+  [
+   "MassSpecGym",
+   "documentation prior",
+   44
+  ],
+  [
+   "external library",
+   "modified cosine",
+   44
+  ],
+  [
+   "ICEBERG",
+   "MassSpecGym",
+   43
+  ],
+  [
+   "LOTUS",
+   "transformer",
+   43
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "documentation prior",
+   43
+  ],
+  [
+   "LambdaRank",
+   "Morgan/ECFP",
+   42
+  ],
+  [
+   "MassSpecGym",
+   "RRF",
+   42
+  ],
+  [
+   "NPAtlas",
+   "SIRIUS/CSI:FingerID",
+   42
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "lib_max gate",
+   42
+  ],
+  [
+   "MIST",
+   "adduct handling",
+   41
+  ],
+  [
+   "LambdaRank",
+   "entropy similarity",
+   41
+  ],
+  [
+   "GLACIER",
+   "MassSpecGym",
+   41
+  ],
+  [
+   "MassSpecGym",
+   "lib_max gate",
+   41
+  ],
+  [
+   "NP prior",
+   "modified cosine",
+   41
+  ],
+  [
+   "MIST",
+   "fragment rescoring",
+   40
+  ],
+  [
+   "FIORA",
+   "modified cosine",
+   40
+  ],
+  [
+   "modified cosine",
+   "rank-1 lock",
+   40
+  ],
+  [
+   "BRICS / generation",
+   "MIST",
+   39
+  ],
+  [
+   "MassSpecGym",
+   "cosine similarity",
+   39
+  ],
+  [
+   "COCONUT",
+   "MIST",
+   36
+  ],
+  [
+   "BRICS / generation",
+   "MAGMa",
+   35
+  ],
+  [
+   "MAGMa",
+   "adduct handling",
+   35
+  ],
+  [
+   "MAGMa",
+   "collision energy",
+   35
+  ],
+  [
+   "MAGMa",
+   "fragment rescoring",
+   35
+  ],
+  [
+   "MIST",
+   "ensemble/blend",
+   34
+  ],
+  [
+   "COCONUT",
+   "MAGMa",
+   34
+  ],
+  [
+   "MAGMa",
+   "Morgan/ECFP",
+   34
+  ],
+  [
+   "MAGMa",
+   "PubChem",
+   34
+  ],
+  [
+   "MAGMa",
+   "RRF",
+   34
+  ],
+  [
+   "MAGMa",
+   "analog/network propagation",
+   34
+  ],
+  [
+   "MAGMa",
+   "cosine similarity",
+   34
+  ],
+  [
+   "MAGMa",
+   "tautomer canonical key",
+   34
+  ],
+  [
+   "MAGMa",
+   "ensemble/blend",
+   34
+  ],
+  [
+   "MAGMa",
+   "entropy similarity",
+   34
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "external library",
+   34
+  ],
+  [
+   "MIST",
+   "analog/network propagation",
+   33
+  ],
+  [
+   "DreaMS",
+   "MAGMa",
+   33
+  ],
+  [
+   "GLACIER",
+   "MAGMa",
+   33
+  ],
+  [
+   "ICEBERG",
+   "MAGMa",
+   33
+  ],
+  [
+   "LOTUS",
+   "MAGMa",
+   33
+  ],
+  [
+   "LightGBM",
+   "MAGMa",
+   33
+  ],
+  [
+   "MAGMa",
+   "MetFrag",
+   33
+  ],
+  [
+   "MAGMa",
+   "NPAtlas",
+   33
+  ],
+  [
+   "MAGMa",
+   "documentation prior",
+   33
+  ],
+  [
+   "MAGMa",
+   "external library",
+   33
+  ],
+  [
+   "MAGMa",
+   "fingerprint net",
+   33
+  ],
+  [
+   "MAGMa",
+   "lib_max gate",
+   33
+  ],
+  [
+   "CFM-ID",
+   "COCONUT",
+   32
+  ],
+  [
+   "CFM-ID",
+   "adduct handling",
+   32
+  ],
+  [
+   "MIST",
+   "collision energy",
+   32
+  ],
+  [
+   "MAGMa",
+   "SIRIUS/CSI:FingerID",
+   32
+  ],
+  [
+   "MIST",
+   "Morgan/ECFP",
+   31
+  ],
+  [
+   "MIST",
+   "cosine similarity",
+   31
+  ],
+  [
+   "MIST",
+   "entropy similarity",
+   31
+  ],
+  [
+   "MIST",
+   "tautomer canonical key",
+   31
+  ],
+  [
+   "DreaMS",
+   "MassSpecGym",
+   31
+  ],
+  [
+   "BRICS / generation",
+   "CFM-ID",
+   30
+  ],
+  [
+   "CFM-ID",
+   "MetFrag",
+   30
+  ],
+  [
+   "CFM-ID",
+   "cosine similarity",
+   30
+  ],
+  [
+   "CFM-ID",
+   "fragment rescoring",
+   30
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "transformer",
+   30
+  ],
+  [
+   "CFM-ID",
+   "ensemble/blend",
+   29
+  ],
+  [
+   "MIST",
+   "MetFrag",
+   29
+  ],
+  [
+   "entropy similarity",
+   "rank-1 lock",
+   28
+  ],
+  [
+   "MIST",
+   "PubChem",
+   27
+  ],
+  [
+   "CFM-ID",
+   "PubChem",
+   26
+  ],
+  [
+   "CFM-ID",
+   "analog/network propagation",
+   26
+  ],
+  [
+   "CFM-ID",
+   "tautomer canonical key",
+   26
+  ],
+  [
+   "CFM-ID",
+   "entropy similarity",
+   25
+  ],
+  [
+   "MIST",
+   "fingerprint net",
+   25
+  ],
+  [
+   "CFM-ID",
+   "Morgan/ECFP",
+   24
+  ],
+  [
+   "LambdaRank",
+   "transformer",
+   24
+  ],
+  [
+   "DreaMS",
+   "MIST",
+   23
+  ],
+  [
+   "BRICS / generation",
+   "XGBoost",
+   23
+  ],
+  [
+   "COCONUT",
+   "XGBoost",
+   23
+  ],
+  [
+   "CFM-ID",
+   "collision energy",
+   23
+  ],
+  [
+   "LightGBM",
+   "MIST",
+   23
+  ],
+  [
+   "CFM-ID",
+   "fingerprint net",
+   22
+  ],
+  [
+   "CFM-ID",
+   "DreaMS",
+   21
+  ],
+  [
+   "UNIQ",
+   "adduct handling",
+   20
+  ],
+  [
+   "rank-1 lock",
+   "transformer",
+   20
+  ],
+  [
+   "MIST",
+   "RRF",
+   18
+  ],
+  [
+   "FIORA",
+   "entropy similarity",
+   18
+  ],
+  [
+   "CFM-ID",
+   "SIRIUS/CSI:FingerID",
+   17
+  ],
+  [
+   "MIST",
+   "transformer",
+   17
+  ],
+  [
+   "XGBoost",
+   "tautomer canonical key",
+   17
+  ],
+  [
+   "ICEBERG",
+   "MIST",
+   16
+  ],
+  [
+   "MIST",
+   "SIRIUS/CSI:FingerID",
+   16
+  ],
+  [
+   "UNIQ",
+   "cosine similarity",
+   16
+  ],
+  [
+   "UNIQ",
+   "ensemble/blend",
+   16
+  ],
+  [
+   "MIST",
+   "MassSpecGym",
+   15
+  ],
+  [
+   "MassSpecGym",
+   "transformer",
+   15
+  ],
+  [
+   "FIORA",
+   "transformer",
+   15
+  ],
+  [
+   "BRICS / generation",
+   "UNIQ",
+   14
+  ],
+  [
+   "Morgan/ECFP",
+   "UNIQ",
+   14
+  ],
+  [
+   "UNIQ",
+   "collision energy",
+   14
+  ],
+  [
+   "CFM-ID",
+   "LightGBM",
+   13
+  ],
+  [
+   "UNIQ",
+   "fragment rescoring",
+   13
+  ],
+  [
+   "UNIQ",
+   "tautomer canonical key",
+   13
+  ],
+  [
+   "CFM-ID",
+   "GLACIER",
+   13
+  ],
+  [
+   "CFM-ID",
+   "RRF",
+   13
+  ],
+  [
+   "NP prior",
+   "transformer",
+   13
+  ],
+  [
+   "CFM-ID",
+   "ICEBERG",
+   12
+  ],
+  [
+   "CFM-ID",
+   "documentation prior",
+   12
+  ],
+  [
+   "MIST",
+   "documentation prior",
+   12
+  ],
+  [
+   "GLACIER",
+   "MIST",
+   11
+  ],
+  [
+   "entropy similarity",
+   "modified cosine",
+   11
+  ],
+  [
+   "LightGBM",
+   "XGBoost",
+   11
+  ],
+  [
+   "MetFrag",
+   "XGBoost",
+   11
+  ],
+  [
+   "Morgan/ECFP",
+   "XGBoost",
+   11
+  ],
+  [
+   "XGBoost",
+   "adduct handling",
+   11
+  ],
+  [
+   "XGBoost",
+   "analog/network propagation",
+   11
+  ],
+  [
+   "XGBoost",
+   "collision energy",
+   11
+  ],
+  [
+   "XGBoost",
+   "ensemble/blend",
+   11
+  ],
+  [
+   "XGBoost",
+   "entropy similarity",
+   11
+  ],
+  [
+   "XGBoost",
+   "fingerprint net",
+   11
+  ],
+  [
+   "XGBoost",
+   "fragment rescoring",
+   11
+  ],
+  [
+   "XGBoost",
+   "transformer",
+   11
+  ],
+  [
+   "CFM-ID",
+   "transformer",
+   11
+  ],
+  [
+   "MAGMa",
+   "transformer",
+   11
+  ],
+  [
+   "LOTUS",
+   "MassSpecGym",
+   11
+  ],
+  [
+   "MassSpecGym",
+   "NPAtlas",
+   11
+  ],
+  [
+   "CFM-ID",
+   "lib_max gate",
+   11
+  ],
+  [
+   "XGBoost",
+   "cosine similarity",
+   10
+  ],
+  [
+   "COCONUT",
+   "UNIQ",
+   10
+  ],
+  [
+   "MassSpecGym",
+   "SIRIUS/CSI:FingerID",
+   10
+  ],
+  [
+   "PubChem",
+   "UNIQ",
+   9
+  ],
+  [
+   "modified cosine",
+   "transformer",
+   9
+  ],
+  [
+   "LambdaRank",
+   "MAGMa",
+   9
+  ],
+  [
+   "LambdaRank",
+   "SIRIUS/CSI:FingerID",
+   9
+  ],
+  [
+   "RRF",
+   "XGBoost",
+   8
+  ],
+  [
+   "UNIQ",
+   "analog/network propagation",
+   8
+  ],
+  [
+   "UNIQ",
+   "entropy similarity",
+   8
+  ],
+  [
+   "LOTUS",
+   "MIST",
+   8
+  ],
+  [
+   "MIST",
+   "NPAtlas",
+   8
+  ],
+  [
+   "MIST",
+   "lib_max gate",
+   8
+  ],
+  [
+   "LambdaRank",
+   "MIST",
+   8
+  ],
+  [
+   "NP prior",
+   "entropy similarity",
+   7
+  ],
+  [
+   "LambdaRank",
+   "modified cosine",
+   7
+  ],
+  [
+   "MIST",
+   "external library",
+   7
+  ],
+  [
+   "MIST",
+   "modified cosine",
+   6
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "modified cosine",
+   6
+  ],
+  [
+   "UNIQ",
+   "fingerprint net",
+   6
+  ],
+  [
+   "CFM-ID",
+   "NP prior",
+   6
+  ],
+  [
+   "CFM-ID",
+   "LOTUS",
+   6
+  ],
+  [
+   "BRICS / generation",
+   "CatBoost",
+   6
+  ],
+  [
+   "CatBoost",
+   "Morgan/ECFP",
+   6
+  ],
+  [
+   "CatBoost",
+   "adduct handling",
+   6
+  ],
+  [
+   "CatBoost",
+   "analog/network propagation",
+   6
+  ],
+  [
+   "CatBoost",
+   "ensemble/blend",
+   6
+  ],
+  [
+   "BRICS / generation",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "COCONUT",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "DreaMS",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "Morgan/ECFP",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "adduct handling",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "analog/network propagation",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "collision energy",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "cosine similarity",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "ensemble/blend",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "entropy similarity",
+   "faiss/kNN",
+   6
+  ],
+  [
+   "faiss/kNN",
+   "fingerprint net",
+   6
+  ],
+  [
+   "faiss/kNN",
+   "fragment rescoring",
+   6
+  ],
+  [
+   "faiss/kNN",
+   "tautomer canonical key",
+   6
+  ],
+  [
+   "MetFrag",
+   "UNIQ",
+   5
+  ],
+  [
+   "UNIQ",
+   "transformer",
+   5
+  ],
+  [
+   "DreaMS",
+   "UNIQ",
+   5
+  ],
+  [
+   "ICEBERG",
+   "UNIQ",
+   5
+  ],
+  [
+   "RRF",
+   "UNIQ",
+   5
+  ],
+  [
+   "CFM-ID",
+   "MassSpecGym",
+   5
+  ],
+  [
+   "CFM-ID",
+   "NPAtlas",
+   5
+  ],
+  [
+   "JESTR",
+   "adduct handling",
+   5
+  ],
+  [
+   "JESTR",
+   "ensemble/blend",
+   5
+  ],
+  [
+   "JESTR",
+   "tautomer canonical key",
+   5
+  ],
+  [
+   "COCONUT",
+   "CatBoost",
+   5
+  ],
+  [
+   "CatBoost",
+   "LightGBM",
+   5
+  ],
+  [
+   "CatBoost",
+   "MetFrag",
+   5
+  ],
+  [
+   "CatBoost",
+   "XGBoost",
+   5
+  ],
+  [
+   "CatBoost",
+   "collision energy",
+   5
+  ],
+  [
+   "CatBoost",
+   "entropy similarity",
+   5
+  ],
+  [
+   "CatBoost",
+   "fingerprint net",
+   5
+  ],
+  [
+   "CatBoost",
+   "fragment rescoring",
+   5
+  ],
+  [
+   "CatBoost",
+   "transformer",
+   5
+  ],
+  [
+   "CatBoost",
+   "cosine similarity",
+   5
+  ],
+  [
+   "GLACIER",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "ICEBERG",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "LightGBM",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "MassSpecGym",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "MetFrag",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "PubChem",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "RRF",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "documentation prior",
+   "faiss/kNN",
+   5
+  ],
+  [
+   "faiss/kNN",
+   "lib_max gate",
+   5
+  ],
+  [
+   "PubChem",
+   "XGBoost",
+   4
+  ],
+  [
+   "BRICS / generation",
+   "JESTR",
+   4
+  ],
+  [
+   "CFM-ID",
+   "FIORA",
+   4
+  ],
+  [
+   "CFM-ID",
+   "JESTR",
+   4
+  ],
+  [
+   "CFM-ID",
+   "MIST",
+   4
+  ],
+  [
+   "COCONUT",
+   "JESTR",
+   4
+  ],
+  [
+   "DreaMS",
+   "JESTR",
+   4
+  ],
+  [
+   "FIORA",
+   "JESTR",
+   4
+  ],
+  [
+   "FIORA",
+   "MIST",
+   4
+  ],
+  [
+   "FIORA",
+   "MassSpecGym",
+   4
+  ],
+  [
+   "FIORA",
+   "SIRIUS/CSI:FingerID",
+   4
+  ],
+  [
+   "GLACIER",
+   "JESTR",
+   4
+  ],
+  [
+   "ICEBERG",
+   "JESTR",
+   4
+  ],
+  [
+   "JESTR",
+   "LOTUS",
+   4
+  ],
+  [
+   "JESTR",
+   "LightGBM",
+   4
+  ],
+  [
+   "JESTR",
+   "MIST",
+   4
+  ],
+  [
+   "JESTR",
+   "MassSpecGym",
+   4
+  ],
+  [
+   "JESTR",
+   "MetFrag",
+   4
+  ],
+  [
+   "JESTR",
+   "Morgan/ECFP",
+   4
+  ],
+  [
+   "JESTR",
+   "NPAtlas",
+   4
+  ],
+  [
+   "JESTR",
+   "PubChem",
+   4
+  ],
+  [
+   "JESTR",
+   "RRF",
+   4
+  ],
+  [
+   "JESTR",
+   "SIRIUS/CSI:FingerID",
+   4
+  ],
+  [
+   "JESTR",
+   "analog/network propagation",
+   4
+  ],
+  [
+   "JESTR",
+   "collision energy",
+   4
+  ],
+  [
+   "JESTR",
+   "cosine similarity",
+   4
+  ],
+  [
+   "JESTR",
+   "documentation prior",
+   4
+  ],
+  [
+   "JESTR",
+   "entropy similarity",
+   4
+  ],
+  [
+   "JESTR",
+   "fingerprint net",
+   4
+  ],
+  [
+   "JESTR",
+   "fragment rescoring",
+   4
+  ],
+  [
+   "JESTR",
+   "lib_max gate",
+   4
+  ],
+  [
+   "UNIQ",
+   "documentation prior",
+   4
+  ],
+  [
+   "NP prior",
+   "SIRIUS/CSI:FingerID",
+   4
+  ],
+  [
+   "BRICS / generation",
+   "GNN",
+   4
+  ],
+  [
+   "GNN",
+   "adduct handling",
+   4
+  ],
+  [
+   "GNN",
+   "cosine similarity",
+   4
+  ],
+  [
+   "GNN",
+   "fragment rescoring",
+   4
+  ],
+  [
+   "LambdaRank",
+   "MassSpecGym",
+   4
+  ],
+  [
+   "MassSpecGym",
+   "rank-1 lock",
+   4
+  ],
+  [
+   "LightGBM",
+   "UNIQ",
+   4
+  ],
+  [
+   "APRIOR",
+   "UNIQ",
+   4
+  ],
+  [
+   "SIRIUS/CSI:FingerID",
+   "UNIQ",
+   3
+  ],
+  [
+   "CatBoost",
+   "RRF",
+   3
+  ],
+  [
+   "CatBoost",
+   "DreaMS",
+   3
+  ],
+  [
+   "CatBoost",
+   "MIST",
+   3
+  ],
+  [
+   "DreaMS",
+   "XGBoost",
+   3
+  ],
+  [
+   "MIST",
+   "XGBoost",
+   3
+  ],
+  [
+   "GNN",
+   "ICEBERG",
+   3
+  ],
+  [
+   "GNN",
+   "Morgan/ECFP",
+   3
+  ],
+  [
+   "GNN",
+   "collision energy",
+   3
+  ],
+  [
+   "GNN",
+   "ensemble/blend",
+   3
+  ],
+  [
+   "GNN",
+   "tautomer canonical key",
+   3
+  ],
+  [
+   "CatBoost",
+   "PubChem",
+   3
+  ],
+  [
+   "CatBoost",
+   "tautomer canonical key",
+   3
+  ],
+  [
+   "GLACIER",
+   "UNIQ",
+   3
+  ],
+  [
+   "LambdaRank",
+   "UNIQ",
+   3
+  ],
+  [
+   "UNIQ",
+   "lib_max gate",
+   3
+  ],
+  [
+   "MassSpecGym",
+   "external library",
+   3
+  ]
+ ],
+ "source": "public Kaggle notebooks of the CASMI 2026 competition (metadata + detected method components; links to the originals)",
+ "records_merkle_root": "a4300c94a1223963c168779bf264a8919d849ce3e0635586a8ee225eb9915ca2"
+}
