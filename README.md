@@ -10,6 +10,7 @@ motif. Self-contained canvas 2D — no dependencies.
 |---|---|
 | [`logo/`](logo/) | the canonical interactive 3D logo (v3) |
 | [`web/`](web/)  | the web property served at **5mart.ml/chemfield** by the [pulse 5mart deploy bundle](https://github.com/Knitweb/pulse/tree/main/deploy/5mart) |
+| [`ms-identification/casmi26/`](ms-identification/casmi26/) | signed method graph of the public CASMI 2026 notebooks (MS/MS → structure), viewer in [`web/casmi26/`](web/casmi26/) |
 
 Also live at [chemfield.github.io/logo](https://chemfield.github.io/logo/) and
 [knitweb.art/chemfield](https://knitweb.art/chemfield/).
