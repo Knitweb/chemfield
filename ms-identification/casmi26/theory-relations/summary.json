@@ -1,0 +1,9 @@
+{
+  "relations": 7,
+  "records": 21,
+  "edges": 14,
+  "documents": 7,
+  "signed_records_verified": true,
+  "scope": "curated theory-to-notebook relations; document corpus prepared, live LightRAG ingestion unverified",
+  "merkle_root": "da2de1b17100a679fbc1a3964c9f1ea519c35a256c91d88dfc937632117278da"
+}
